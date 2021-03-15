@@ -485,7 +485,7 @@ int main(int argc, char **argv)
 
 	file_name = argv[1];
 
-	// Ú‘±ƒfƒoƒCƒX”‚Ìæ“¾
+	// ï¿½Ú‘ï¿½ï¿½fï¿½oï¿½Cï¿½Xï¿½ï¿½ï¿½Ìæ“¾
 	device_count = k4a_device_get_installed_count();
 	std::cout << "device number is " << device_count << std::endl;
 	if (device_count == 0)
@@ -493,7 +493,7 @@ int main(int argc, char **argv)
 		printf("No K4A devices found\n");
 		return 0;
 	}
-	// ƒfƒoƒCƒX‚Ì‰Šú‰»
+	// ï¿½fï¿½oï¿½Cï¿½Xï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½
 	for (int i = 0; i < device_count; i++) {
 		k4a_device_t device = NULL;
 		devices.push_back(device);
@@ -507,7 +507,7 @@ int main(int argc, char **argv)
 	buffers.resize(device_count);
 	transformations.resize(device_count);
 
-	// ƒfƒoƒCƒX‚ÌƒI[ƒvƒ“
+	// ï¿½fï¿½oï¿½Cï¿½Xï¿½ÌƒIï¿½[ï¿½vï¿½ï¿½
 	for (int i = 0; i < device_count; i++) {
 		if (K4A_RESULT_SUCCEEDED != k4a_device_open(i, &devices[i]))
 		{
@@ -516,7 +516,7 @@ int main(int argc, char **argv)
 		}
 	}
 
-	//@ƒfƒoƒCƒXî•ñ‚Ìæ“¾
+	//ï¿½@ï¿½fï¿½oï¿½Cï¿½Xï¿½ï¿½ï¿½Ìæ“¾
 	for (int i = 0; i < device_count; i++) {
 		std::cout << "device " << i << " info " << std::endl;
 
